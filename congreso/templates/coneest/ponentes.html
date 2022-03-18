@@ -1,0 +1,43 @@
+{% load static %}
+{% block content %}
+<section class="section-curso" id="ponentes_name">
+        <div class="p-4"></div>
+    <div class="container">
+        <h1 class="custom-title">Ponentes</h1>
+        <div class="p-2"></div>
+        <div class="row">
+            <div class="owl-carousel owl-theme m-2">
+                {% for ponente in ponentes %}
+                <div class="item">
+                    <div class="card shadow-lg p-1 mb-5 bg-body rounded" style="width: 16.5rem;">
+                        <img src="{{ ponente.foto.url }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ ponente.nombre_apellido }}</h5>
+                            <p class="card-subtitle mb-2 text-muted">
+                                <small>
+                                {{ ponente.descripcion }}
+                                </small>
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>
+                                <strong class="text-primary">Universidad: </strong>{{ ponente.universidad }}
+                            </small>
+                            </li>
+                            <li class="list-group-item"><small>
+                                <strong class="text-primary">Email: </strong>{{ ponente.correo }}
+                            </small>
+                            </li>
+                            <li class="list-group-item"><small>
+                                <strong class="text-primary">Ciudad: </strong>{{ ponente.ciudad }}   <strong class="text-primary">  Pais: </strong> {{ ponente.pais }}
+                            </small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'coneest/app.html' %}
+
+{% block content %}
+
+
+<div class="container-fluid section-curso">
+  <div class="container">
+
+  <div class="row">
+    <div class="col-md-4">
+      <section>
+        <div class="p-4"></div>
+        <p class="h3">Lista de cursos</p>
+        <div class="p-2"></div>
+        <ul class="list-group list-group-flush">
+          {% for curso in cursos %}
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">{{curso.nombre}}</a>
+          {% endfor %}
+        </ul>
+        <div class="p-4"></div>
+        <p class="h3">Lista Mini Cursos</p>
+        <div class="p-2"></div>
+        <ul class="list-group list-group-flush">
+          {% for mini in mini_cursos %}
+          <li class="list-group-item"><a href="">{{mini.nombre}}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+    <div class="col-md-8 section-curso">
+      <section class="section-curso">
+        <div class="p-4"></div>
+        <div class="container">
+          <div>
+            <p class="h1">Cursos</p>
+          </div>
+          {% for curso in cursos %}
+          <div class="card">
+            <div class="card-header text-danger">
+              {{curso.nombre}}
+            </div>
+            <div class="card-body">
+              <blockquote class=" mb-0">
+                <p>{{curso.descripcion_curso}}</p>
+                <p><small><strong class="text-primary">Dia: </strong>{{curso.dia}}</small></p>
+                <p><small><strong class="text-primary">Hora: </strong>{{curso.hora}}</small></p>
+                <p><small><strong class="text-primary">Ponente: </strong>{{curso.ponente}}</small></p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="p-1"></div>
+          {% endfor %}
+        </div>
+      </section>
+
+
+      <section class="section-curso">
+        <div class="p-4"></div>
+        <div class="container">
+          <div>
+            <p class="h1">Mini Cursos</p>
+          </div>
+          {% for mini in mini_cursos %}
+          <div class="card">
+            <div class="card-header text-danger">
+              {{mini.nombre}}
+            </div>
+            <div class="card-body">
+              <blockquote class=" mb-0">
+                <p>{{mini.descripcion_curso}}</p>
+                <p><small><strong class="text-primary">Dia: </strong>{{mini.dia}}</small></p>
+                <p><small><strong class="text-primary">Hora: </strong>{{mini.hora}}</small></p>
+                <p><small><strong class="text-primary">Ponente: </strong>{{mini.ponente}}</small></p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="p-1"></div>
+          {% endfor %}
+        </div>
+        <div class="p-4"></div>
+      </section>
+
+
+
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+{% endblock %}
