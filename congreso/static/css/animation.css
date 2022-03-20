@@ -1,0 +1,14 @@
+.img-animation{
+  animation-name: animar;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes animar {
+  0%{
+    transform: scale(.3);
+    border-radius: 100%;
+  }
+}
