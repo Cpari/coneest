@@ -1,18 +1,21 @@
 {% load static %}
 {% block content %}
 
-<section>
+<section class="section-alterno">
 	<div class="py-4"></div>
 
 	<div class="container">
-		<h1 class="custom-title">Presentación</h1>
-		<p>La Facultad de Estadistica e Informatica de la Universidad Nacional del Altiplano esta agradecida de poder contar 
-			con la organizacion del 23 congreso nacional de estadistica de las universidades del peru.
-		</p>
-		<p>Les da el agradecimiento ante mano por la participacion de todos los estudiantes y personas en general por apoyar este evento nacional que se realizara
-			de forma virtual se pide perdon ante mano por algunas fallas tecnicas que se encontraran en la semana del congreso o algun fallo de esta pagina.
-		</p>
-		<p></p>
+		<div class="row">
+			<div class="col-md-6">
+				<h1 class="custom-title">Presentación</h1>
+				<p>El CONEEST 2022 mantiene el propósito, propio de su carácter de foro de encuentro y debate de contribuir al intercambio de ideas y experiencias relacionadas con la Estadística, hace extensiva la invitación a toda la comunidad de estadísticos egresados, estudiantes de pregrado y docentes de este evento nacional</p>
+			</div>
+			<div class="col-md-6">
+				<video class="img-fluid" controls autoplay loop>
+					<source src="{% static 'media/video.mp4' %}" type="video/mp4">
+				</video>
+			</div>
+		</div>
 	</div>
 	<div class="py-4"></div>
 	
@@ -27,7 +30,7 @@
 				<img src="{% static 'media/curso.jpg' %}" class="img-fluid img-animation" alt="">
 			</div>
 			<div class="col-md-8">
-				<p>Se dictaran al rededor de 20 cursos y 10 minicursos de interes estadistico en diferentes horarios</p>
+				<p>Los cursos estan seleccionados cuidadosamente para poser llevar</p>
 				<a href="{% url 'cursos' %}" class="btn btn-custom">ver mas</a>
 			</div>
 		</div>
