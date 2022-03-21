@@ -21,3 +21,6 @@ def registro(request):
 
 def cronograma(request):
     return render(request, 'coneest/cronograma/cronograma.html')
+
+def build(request):
+    return render(request, 'coneest/cursos/build.html')
