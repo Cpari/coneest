@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONEEST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="{% static 'media/logo-finesi.png' %}" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -20,14 +20,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:100,200,300,400" rel="stylesheet">
-
-
-
-
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -60,10 +53,10 @@
                         <a class="nav-link active" href="/#ponentes_name">Ponentes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'cronograma' %}">Conograma</a>
+                        <a class="nav-link active" href="{% url 'build' %}">Conograma</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'registro' %}">Registrarse</a>
+                        <a class="nav-link active" href="{% url 'build' %}">Registrarse</a>
                     </li>
                 </ul>
             </div>
@@ -81,44 +74,56 @@
     <section class="custom-footer">
         <div class="container p-4">
             <div class="row">
-                <div class="col-md-6 text-light">
+                <div class="col-md-4 text-light">
                     <ul>
-                        <li><a href="">Universidad Nacional del Altiplano</a></li>
-                        <li>Contactos: 923 123 543</li>
-                        <li>Creditos de las fotografias para:</li>
-                        <li>Roland</li>
-                </div>
-                <div class="col-md-6 text-light text-end">
-                    <ul>
-                        <li>Redes Sociales</li>
-                        <li class="h3">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>Ubicacion: </li>
-                        <li>Jorge Basadre</li>
+                        <h4 class="custom-title-white">Contáctanos</h4>
+                        <li class="text-secondary">Ubicación: <small>Av. Floral 1153, Puno 21001</small></li>
+                        <li class="custom-title-white">Celulares:</li>
+                        <li class="text-secondary">+51 989 523 749</li>
+                        <li class="text-secondary">+51 957 108 508</li>
+                        <li class="text-secondary">+51 914 110 715</li>
+                        <li class="custom-title-white">Fijo:</li>
+                        <li class="text-secondary">+51 624 893</li>
+                    </div>
+                    <div class="col-md-4 text-light">
+                        <ul>
+                            <h4 class="custom-title-white">Redes Sociales</h4>
+                            <li class="h3">
+                                <a href="https://www.facebook.com/XXIII-CONEEST-PUNO-2022-107882468341471/" target="_blank"><i class="fa-brands fa-facebook text-secondary"></i></a>
+                                <a href="https://twitter.com/ConeestP?t=LBGwWOzCpVJ7vjMglXfgqw&s=09"><i class="fa-brands fa-twitter text-secondary"></i></a>
+                                <a href="https://www.instagram.com/invites/contact/?i=1k9cwfzyeulfx&utm_content=nww2ys7" target="_blank"><i class="fa-brands fa-instagram text-secondary"></i></a>
+                                <li><a href="https://web.unap.edu.pe/intro/" target="_blank" class="text-secondary">Universidad Nacional del Altiplano</a></li>
+                                <li class="custom-title-white">Créditos de las fotografias:</li>
+                                <li class="text-secondary">Roland Espinoza</li>
+                                <a href="https://www.facebook.com/r.espinozamaron" target="_blank"><i class="fa-brands fa-facebook text-secondary"></i></a>
+                                <a href="https://www.instagram.com/ronaldespinozaphotography/" target="_blank"><i class="fa-brands fa-instagram text-secondary"></i></a>
+                            </li>
                     </ul>
                 </div>
+                <div class="col-md-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d959.6573183122014!2d-70.01860067082512!3d-15.823490209029073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915d69b07c6f13f3%3A0x173c966c63aeb006!2sFacultad%20de%20Ingenier%C3%ADa%20Estad%C3%ADstica%20e%20Inform%C3%A1tica(Pab.%20Antiguo)!5e0!3m2!1ses-419!2spe!4v1647870667389!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="img-fluid"></iframe>
+                </div>
+            </div>
+            <div>
+                <p class="text-center text-secondary">© Copyright 2022. Todos los Derechos Reservados.</p>
             </div>
         </div>
     </section>
 
 
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script src="{% static 'js/build.js' %}" type="text/javascript"></script>
 
