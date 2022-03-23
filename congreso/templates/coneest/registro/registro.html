@@ -1,57 +1,60 @@
 {% extends 'coneest/app.html' %}
 {% block content %}
-<section>
-    <div class="p-4"></div>
-    <div class="container">
-        <p class="h3 text-danger">Registrate y Participa del 12 CONEEST</p>
-    </div>
-    <div class="p-4"></div>
-    <div class="container">
-        <form class="row g-3">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="p-4"></div>
+                    <p class="h2 custom-title text-center">
+                        Registra tu participacion
+                    </p>
+                    <div class="p-2"></div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombres</label>
+                        <input type="text"
+                               class="form-control"
+                               id="exampleFormControlInput1"
+                               placeholder="">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido Paterno</label>
+                        <input type="Text"
+                               class="form-control"
+                               id="exampleFormControlInput1"
+                               placeholder="">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido Materno</label>
+                        <input type="text"
+                               class="form-control"
+                               id="exampleFormControlInput1"
+                               placeholder="">
+                        <label for="exampleFormControlInput1" class="form-label">Documento de Identidad</label>
+                        <input type="text"
+                               class="form-control"
+                               id="exampleFormControlInput1"
+                               placeholder="">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email"
+                               class="form-control"
+                               id="exampleFormControlInput1"
+                               placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Secuencia de Pago</label>
+                        <input type="text"
+                               class="form-control"
+                               id="exampleFormControlInput1"
+                               placeholder="xxxxxxxxx">
+                        <label for="exampleFormControlInput1" class="form-label">Monto de Pago</label>
+                        <input type="text"
+                               class="form-control"
+                               id="exampleFormControlInput1"
+                               placeholder="S/. 100.00">
+                        <label for="formFile" class="form-label">Seleccione la imagen de su recibo</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
                 </div>
+                <div class="col-md-3"></div>
+                <div class="p-4"></div>
             </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-success">Registrarse</button>
-            </div>
-        </form>
-    </div>
-    <div class="p-4"></div>
-</section>
+        </div>
+    </section>
 {% endblock %}
